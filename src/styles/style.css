@@ -1,2 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #0c0b08;
+  color: #fff;
+}
+
+.subscribe-button {
+  background-color: #dcca87;
+  border: 1px solid #dcca87;
+  padding: 8px 32px;
+  font-family: "Cormorant Upright", serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-button {
+    width: 100%;
+  }
+}
+.subscribe-card {
+  width: 90%;
+  height: 442px;
+  margin: auto;
+  background-color: #0c0c0c;
+  padding: 2rem;
+  text-align: center;
+}
+.subscribe-card .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-card .newsletter p {
+  font-family: "Cormorant Upright", serif;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+.subscribe-card h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 64px;
+  color: #dcca87;
+  text-align: center;
+}
+.subscribe-card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 992px) {
+  .subscribe-card {
+    padding: 1rem;
+  }
+  .subscribe-card h2 {
+    font-size: 48px;
+  }
+  .subscribe-card p {
+    font-size: 12px;
+  }
+  .subscribe-card .newsletter p {
+    font-size: 16px;
+  }
+}
+.footer {
+  background-image: url("../images/footerBackgound.png");
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 128px;
+  transform: translateX(-20px);
+}
+.home-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.home-footer ul {
+  list-style: none;
+}
+.home-footer ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.home-footer h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  color: #dcca87;
+  text-transform: uppercase;
+}
+.home-footer h5 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  color: #dcca87;
+  text-align: center;
+}
+.home-footer p {
+  margin-bottom: 0;
+  text-overflow: clip;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .home-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+  }
+  .home-footer div {
+    margin-bottom: 20px;
+  }
+  .home-footer h2 {
+    font-size: 36px;
+  }
+  .home-footer p {
+    font-size: 12px;
+  }
+  .home-footer h5 {
+    font-size: 24px;
+  }
+}
+.subscribe-input {
+  width: 60%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #f5efdb;
+  background-color: #0c0c0c;
+  color: white;
+}
+
+.subscribe-input::-moz-placeholder {
+  font-family: "Cormorant Upright", serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 175%;
+}
+
+.subscribe-input::placeholder {
+  font-family: "Cormorant Upright", serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 175%;
+}
+
+.subscribe-form {
+  margin: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-input {
+    width: 100%;
+    transform: translateX(-17px);
+  }
+}
+.nav-head {
+  font-family: "Cormorant Upright", serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.nav-head:hover {
+  color: #dcca87;
+}
+
+.nav-link-item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #fff;
+}
+
+.nav-link-item:hover {
+  color: #dcca87;
+}
+
+.login {
+  border-right: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://api.iconify.design/pajamas/hamburger.svg?color=white");
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .login {
+    border-right: none;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .small-nav {
+    z-index: 5 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100vh;
+  }
+  .navbar {
+    background-color: #dcca87 !important;
+  }
+  .nav-link-item {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@use "../colors";
+@use "../fonts";
+
+.subscribe-button {
+  background-color: colors.$secTextColor;
+  border: 1px solid colors.$secTextColor;
+  padding: 8px 32px;
+  font-family: fonts.$pryFontFamily;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-button {
+    width: 100%;
+  }
+}

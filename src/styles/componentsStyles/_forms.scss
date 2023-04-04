@@ -1,0 +1,30 @@
+@use "../colors";
+@use "../fonts";
+
+.subscribe-input {
+  width: 60%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #f5efdb;
+  background-color: colors.$secBackgroundColor;
+  color: white;
+}
+
+.subscribe-input::placeholder {
+  font-family: fonts.$pryFontFamily;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  //   font-weight: 600;
+  line-height: 175%;
+}
+
+.subscribe-form {
+  margin: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-input {
+    width: 100%;
+    transform: translateX(-17px);
+  }
+}

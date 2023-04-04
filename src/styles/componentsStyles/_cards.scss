@@ -1,0 +1,58 @@
+@use "../colors";
+@use "../fonts";
+
+.subscribe-card {
+  width: 90%;
+  height: 442px;
+  margin: auto;
+  background-color: colors.$secBackgroundColor;
+  padding: 2rem;
+  text-align: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   flex-grow: initial;
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-family: fonts.$pryFontFamily;
+      font-size: 23px;
+      color: colors.$pryTextColor;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+  h2 {
+    font-family: fonts.$pryFontFamily;
+    font-size: 64px;
+    color: colors.$secTextColor;
+    text-align: center;
+  }
+  p {
+    font-family: fonts.$secFontFamily;
+    font-size: 16px;
+    text-align: center;
+    color: colors.$pryTextColor;
+    font-weight: 400;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subscribe-card {
+    padding: 1rem;
+    h2 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .newsletter {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

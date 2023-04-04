@@ -1,6 +1,10 @@
 @use "./colors";
 @use "./fonts";
-@use "./global";
-@use "./componentStyles/hero";
-@use "./componentStyles/cards";
-@use "./componentStyles/navbar";
+@use "./reset";
+@use "./componentsStyles/hero";
+@use "./componentsStyles/buttons";
+@use "./componentsStyles/cards";
+@use "./componentsStyles/footer";
+@use "./componentsStyles/forms";
+@use "./componentsStyles/navbar";
+@use "./componentsStyles/pagination";

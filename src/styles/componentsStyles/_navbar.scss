@@ -1,0 +1,61 @@
+@use "../fonts";
+@use "../colors";
+
+.nav-head {
+  font-family: fonts.$pryFontFamily;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: colors.$pryTextColor;
+}
+.nav-head:hover {
+  color: colors.$secTextColor;
+}
+
+.nav-link-item {
+  font-family: fonts.$secFontFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: colors.$pryTextColor;
+}
+
+.nav-link-item:hover {
+  color: colors.$secTextColor;
+}
+.login {
+  border-right: 1px solid colors.$pryTextColor;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://api.iconify.design/pajamas/hamburger.svg?color=white");
+}
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .login {
+    border-right: none;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .small-nav {
+    z-index: 5 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100vh;
+  }
+  .navbar {
+    background-color: colors.$secTextColor !important;
+  }
+  .nav-link-item {
+    margin-bottom: 20px;
+  }
+}
